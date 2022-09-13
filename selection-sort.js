@@ -1,4 +1,17 @@
 function selectionSort(array) {
+	for(let i = 0; i < array.length; i++){
+		let min = i
+		for(let q = i+1; q < array.length; q++){
+			if(array[q] < array[min])[
+				min=q
+			]
+		}
+		if(i != min){
+			let burger = array[i];
+			array[i] = array[min];
+			array[min] = burger;
+		}
+	}
 	/*
 	 ** Search through the whole array for the smallest element
 	 ** then swap it with the first element.
